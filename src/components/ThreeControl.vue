@@ -10,7 +10,7 @@
 import {ref, onMounted, onUnmounted} from "vue";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 
 export default {
@@ -19,7 +19,7 @@ export default {
     // 创建容器
     const container = ref(null);
     // 声明所需的变量
-    let scene, camera, renderer, model, controls;
+    let scene, camera, renderer, model;
 
     //  onMounted 的时候
     //      初始化 :
@@ -63,8 +63,8 @@ export default {
       container.value.appendChild(renderer.domElement);
 
       // Create OrbitControls and add them to the camera
-      controls = new OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true;
+      // controls = new OrbitControls(camera, renderer.domElement);
+      // controls.enableDamping = true;
       // controls.dampingFactor = 0.1;
       // controls.rotateSpeed = 1;
       // controls.zoomSpeed = 1.0;
