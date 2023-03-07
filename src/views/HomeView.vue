@@ -20,6 +20,12 @@
        load 3D file to the
      -->
     <router-link to="/three-load" class="link">load 3d files </router-link>
+    <br>
+
+    <!--
+       using Add orbit controls
+     -->
+    <router-link to="/three-control" class="link">using Add orbit controls</router-link>
 
 
 
