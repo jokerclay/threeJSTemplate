@@ -1,18 +1,47 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <h1>HOME VIEW</h1>
+
+   <!--
+      native three js example
+    -->
+    <router-link to="/three-native" class="link">native three.js example </router-link>
+    <br>
+
+    <!--
+       combine three.js with vue.js
+     -->
+    <router-link to="/three-vue" class="link">vue3.js & three.js example </router-link>
+    <br>
+
+
+    <!--
+       load 3D file to the
+     -->
+    <router-link to="/three-load" class="link">load 3d files </router-link>
+
+
+
+
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    // HelloWorld,
   }
 }
+
 </script>
+
+<style>
+.link {
+  text-decoration: none;
+  font-size: 24px;
+}
+</style>
